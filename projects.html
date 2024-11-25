@@ -1,93 +1,51 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Projects - Riya Mahesh</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Riya Mahesh</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="CV.pdf" target="_blank">CV</a></li>
+        </ul>
+    </nav>
 
-<nav>
+    <div class="projects-container">
+        <h1>Projects</h1>
 
-<ul>
+        <div class="project-card">
+            <h2>Anomaly Preserving Image Restoration for Noisy and Blurred Images</h2>
+            <p>The project aims to restore noisy images with defects while preserving the anomaly. Two models – Unet and Residual Channel Attention Network have been implemented. The link to the repository can be found below.</p>
+            <a href="https://github.com/riya-mahesh/Defect-Preserving-Image-Restoration" target="_blank">View Project</a>
+        </div>
 
-<li><a href="index.html">About</a></li>
+        <div class="project-card">
+            <h2>Sparse Attention Transformers for Granger Causality</h2>
+            <p>The project establishes causal links in multivariate time series data using Sparse Attention Transformer. The work has been accepted at ACM CODS-COMAD 2024. The link to the repository and the paper pre-print can be found below.</p>
+            <a href="https://github.com/riya-mahesh/SparseAttentionTransformersForGrangerCausality" target="_blank">View Project</a>
+            <a href="https://arxiv.org/abs/2411.13264" target="_blank">Paper Link</a>
+        </div>
 
-<li><a href="publications.html">Publications</a></li>
+        <div class="project-card">
+            <h2>Information Retrieval System</h2>
+            <p>The aim of the project is to build a search engine for the Cranfield dataset. Our code implements and compares MAP, F1 scores of Vector Space Model, Latent Semantic Analysis, Word2Vec, Doc2Vec, and BM25 models.</p>
+            <a href="https://github.com/riya-mahesh/NLP_Course_Project" target="_blank">View Project</a>
+        </div>
 
-<li><a href="projects.html" class="active">Projects</a></li>
-
-<li><a href="CV.pdf" target="_blank">CV</a></li>
-
-</ul>
-
-</nav>
-
-<div class="projects-container">
-
-<h1>Projects</h1>
-
-<div class="project-card">
-
-<h2>Anomaly Preserving Image Restoration for Noisy and Blurred images</h2>
-
-<p>The project aims to restore noisy images with defects while preserving the anomaly. Two models – Unet and Residual Channel Attention Network have been implemented. The link to the repository can be found below.</p>
-
-<a href="https://github.com/riya-mahesh/Defect-Preserving-Image-Restoration" target="_blank">View Project</a>
-
-</div>
-
-<div class="project-card">
-
-<h2>Sparse Attention Transformers for Granger Causality</h2>
-
-<p>The project establishes causal links in multivariate time series data using Sparse Attention Transformer. The work has been accepted at ACM CODS-COMAD 2024. The link to the repository and the paper pre-print can be found below.</p>
-
-<a href="https://github.com/riya-mahesh/SparseAttentionTransformersForGrangerCausality" target="_blank">View Project</a>
-
-<a href="https://arxiv.org/abs/2411.13264" target="_blank">Paper link</a>
-
-</div>
-
-
-<div class="project-card">
-
-<h2>Information Retrieval System</h2>
-
-<p>The aim of the project is to build a search engine for Cranfield dataset. Our code implements and compares MAP, F1 scores of Vector Space Model, Latent Semantic Analysis, Word2Vec, Doc2Vec and BM25 models.</p>
-
-<a href="https://github.com/riya-mahesh/NLP_Course_Project.git" target="_blank">View Project</a>
-
-</div>
-
-
-
-
-
-<div class="project-card">
-
-<h2>Federated Multi-Armed Bandits</h2>
-
-<p>Simulations and benchmarking of FedElim algorithm for best-arm identification in Federated Bandits. The presentation slides can be found below:</p>
-
-<a href="assets/MAB_Presentation.pdf"_blank">View Prresentation</a>
-
-</div>
-
-
-
-
-</div>
-
+        <div class="project-card">
+            <h2>Federated Multi-Armed Bandits</h2>
+            <p>Simulations and benchmarking of FedElim algorithm for best-arm identification in Federated Bandits. The presentation slides can be found below:</p>
+            <a href="assets/MAB_Presentation.pdf" target="_blank">View Presentation</a>
+        </div>
+    </div>
 </body>
 
 </html>
