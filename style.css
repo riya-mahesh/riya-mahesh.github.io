@@ -138,13 +138,22 @@ h1 {
 }
 
 .portrait {
+    position: relative;
+    overflow: hidden;
     width: 100%;
-    height: auto;
     aspect-ratio: 4 / 5;
-    object-fit: cover;
-    object-position: top;
     border-radius: 4px;
     margin-top: 0.5rem;
+}
+
+/* Crops to the subject: a 560x700 window at (210, 740) of the 1060x1600 photo */
+.portrait img {
+    position: absolute;
+    top: -105.7%;
+    left: -37.5%;
+    width: 189.3%;
+    max-width: none;
+    height: auto;
 }
 
 /* What I bring */
