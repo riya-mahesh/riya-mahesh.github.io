@@ -2,55 +2,329 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Riya Mahesh</title>
+    <meta name="description" content="Riya Mahesh is an MS Computer Science student at NYU Courant working across ML engineering, systems, research and quant.">
+    <meta property="og:title" content="Riya Mahesh">
+    <meta property="og:description" content="ML engineering, systems, research and quant. MS Computer Science at NYU Courant.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://riya-mahesh.github.io/">
+    <meta property="og:image" content="https://riya-mahesh.github.io/assets/profile.jpg">
+    <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">About</a></li>
-            <li><a href="publications.html" class="active">Publications</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="CV.pdf" target="_blank">CV</a></li>
-        </ul>
-    </nav>
-    <div class="about-container">
-        <div class="about-text">
-<h1>Riya Mahesh</h1>
-<p>
-    Hi, I’m Riya Mahesh. I’m an MS in Computer Science student focused on building 
-    high-performance and scalable systems at the intersection of 
-    machine learning, algorithms, and mathematical modeling. 
-    I’m particularly interested in applying strong theoretical foundations 
-    to solve real-world engineering and quantitative problems.
-</p>
+    <header class="site-header">
+        <nav class="wrap" aria-label="Main">
+            <a class="brand" href="#top">Riya Mahesh</a>
+            <ul>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="CV.pdf" target="_blank" rel="noopener">CV</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<p>
-    My areas of focus include:
-</p>
+    <main id="top" class="wrap">
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Riya Mahesh</h1>
+                <p class="lead">I take ML from research idea to production system.</p>
+                <p>
+                    I'm an MS Computer Science student at NYU Courant (AI concentration), graduating
+                    in May 2027, with a background in electrical engineering from IIT Madras. My work
+                    balances engineering, systems and ML research, and I've explored quant along the way.
+                </p>
+                <p>
+                    At Adobe, I developed a new video generation method, now a filed U.S. patent
+                    application, and deployed a production inference API for Firefly. At NYU, I write
+                    bit-reproducible CUDA kernels and study reward hacking in RL post-training of
+                    vision-language models. Before that, I built credit risk analysis that went
+                    into production at Morgan Stanley.
+                </p>
+                <p>
+                    I'd love to bring all of this to something cutting-edge and help take it to production.
+                </p>
+                <ul class="links">
+                    <li><a href="mailto:riyamahesh20@gmail.com">Email</a></li>
+                    <li><a href="https://github.com/riya-mahesh" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/riya-mahesh/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=xz-UBykAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+                    <li><a href="CV.pdf" target="_blank" rel="noopener">CV</a></li>
+                </ul>
+            </div>
+            <img class="portrait" src="assets/profile.jpg" alt="Portrait of Riya Mahesh" width="632" height="889">
+        </section>
 
-<ul>
-    <li>Systems and Performance-Oriented Software Engineering</li>
-    <li>Machine Learning & Applied ML Research</li>
-    <li>Natural Language Processing (NLP) and Representation Learning</li>
-    <li>Algorithms and Data Structures</li>
-    <li>Statistical Modeling & Quantitative Methods</li>
-    <li>Optimization and Numerical Methods</li>
-    <li>Privacy-Preserving and Distributed ML Systems</li>
-</ul>
+        <section class="strengths" aria-label="What I bring">
+            <div>
+                <h2>Engineering</h2>
+                <p>Production inference on H100s for Adobe Firefly: GPU worker orchestration, model serving, Docker, Kubernetes and CI/CD.</p>
+            </div>
+            <div>
+                <h2>Systems</h2>
+                <p>CUDA kernels on INT8 Tensor Cores, profiled against cuBLAS, and DDP pre-training of a 650M-parameter transformer.</p>
+            </div>
+            <div>
+                <h2>Research</h2>
+                <p>RL post-training, diffusion models, genomic foundation models and causal time series, with three papers and a patent filing.</p>
+            </div>
+            <div>
+                <h2>Quant</h2>
+                <p>Credit and bond risk at Morgan Stanley, plus coursework in bandits, randomized algorithms and linear optimization.</p>
+            </div>
+        </section>
 
-<p>
-    I enjoy designing efficient systems, analyzing trade-offs, and solving 
-    complex problems that require engineering precision. 
-    I am actively seeking opportunities in systems software engineering, 
-    machine learning research, NLP engineering, and quantitative roles 
-    where I can contribute to building robust, scalable, and intelligent systems.
-</p>
-        </div>
-        <div class="about-image">
-            <img src="assets/profile.jpg" alt="Profile Picture">
-        </div>
-    </div>
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+
+            <article class="entry">
+                <p class="when">May – Aug 2026</p>
+                <div>
+                    <h3>ML Engineering Intern, Adobe</h3>
+                    <p class="meta">Firefly Video Generation · Seattle, WA</p>
+                    <ul>
+                        <li>Deployed a production inference API for Firefly's video pipeline, implementing GPU worker orchestration, request processing and model serving on H100s with Docker, Kubernetes and CI/CD.</li>
+                        <li>Developed a novel inference-time cinemagraph generation method using WAN and LTX diffusion models, improving motion quality by 30% and optimizing GPU memory for deployment. U.S. patent application filed.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="entry">
+                <p class="when">May – Jul 2024</p>
+                <div>
+                    <h3>Strats and Quant Intern, Morgan Stanley</h3>
+                    <p class="meta">Fixed Income Division · Mumbai, India</p>
+                    <ul>
+                        <li>Developed a credit and bond risk pattern analysis algorithm that uses feature attribution to identify anomaly drivers, deployed in production to validate robustness during migration to a new risk prediction system.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="entry">
+                <p class="when">May – Jun 2023</p>
+                <div>
+                    <h3>AIML Intern, Indian Space Research Organisation</h3>
+                    <p class="meta">Telemetry Centre · Bangalore, India</p>
+                    <ul>
+                        <li>Developed an LSTM-based anomaly detection system for satellite telemetry with non-parametric dynamic thresholding, reaching 90% accuracy and supporting spacecraft health monitoring.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <section id="research">
+            <h2 class="section-title">Research</h2>
+
+            <article class="entry">
+                <p class="when">Sep 2026 – Present</p>
+                <div>
+                    <h3>Bit-Reproducible GPU Training for Verifiable Learning</h3>
+                    <p class="meta">Student Researcher, NYU Courant · <a href="https://github.com/riya-mahesh/Bit_Reproducible_Training" target="_blank" rel="noopener">Code</a></p>
+                    <ul>
+                        <li>Built bit-reproducible CUDA kernels for GPT-2 training using exact integer math on INT8 Tensor Cores, giving bit-identical outputs across GPUs. Profiled against cuBLAS: 2.8× faster than FP32 in int8 mode.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="entry">
+                <p class="when">Aug 2026 – Present</p>
+                <div>
+                    <h3>RL for Foundation Model Post-Training</h3>
+                    <p class="meta">Student Researcher, CILVR Lab, NYU</p>
+                    <ul>
+                        <li>Showed that partial verifiers cause reward hacking in RL post-training of vision-language models (Qwen2.5-VL-3B, GRPO), dropping correctness from 71% to 38%. Trained a reward predictor for selective verification, cutting verifier compute by 2×.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="entry">
+                <p class="when">Jan – May 2026</p>
+                <div>
+                    <h3>Genomic Foundation Model</h3>
+                    <p class="meta">Student Researcher, Center for Human Genetics &amp; Genomics, NYU Langone · <a href="https://github.com/riya-mahesh/Genomic-Foundation-Model" target="_blank" rel="noopener">Code</a></p>
+                    <ul>
+                        <li>Pre-trained a 650M-parameter ModernBERT phylogenetic transformer on UniRef90 protein sequences using DDP and FlashAttention, reaching 0.87 AUC-ROC on the ClinVar benchmark for zero-shot prediction of genetic variant effects.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="entry">
+                <p class="when">May 2023 – Nov 2024</p>
+                <div>
+                    <h3>Distributed ML and ML Security</h3>
+                    <p class="meta">Research Assistant, College of Computing &amp; Data Science, Nanyang Technological University · Singapore</p>
+                    <ul>
+                        <li>Reduced cross-node communication cost in distributed CNN training by 30.7% using Minimum Spanning Tree-based gossip learning on sparse graphs of 150 nodes.</li>
+                        <li>Surveyed ML security threats across the model lifecycle, covering poisoning, evasion and exploratory attacks, and proposed a taxonomy of threat models and cryptographic defenses.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="entry">
+                <p class="when">Aug 2023 – Jul 2024</p>
+                <div>
+                    <h3>Sparse Attention for Causal Inference</h3>
+                    <p class="meta">Undergraduate Researcher, Machine and Learning Theory Lab, IIT Madras · Chennai, India</p>
+                    <ul>
+                        <li>Designed a compute-efficient sparse attention spatio-temporal transformer pipeline for causal inference on climate time series, improving F1/ROC by 10% over VAR and XGBoost regression methods.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <section id="publications">
+            <h2 class="section-title">Publications and Patents</h2>
+
+            <article class="pub">
+                <h3>Transformers with Sparse Attention for Granger Causality</h3>
+                <p class="authors"><strong>Riya Mahesh</strong>, Rahul Vashisht, Chandrashekar Lakshminarayanan</p>
+                <p class="venue"><em>Discover Data</em> (Springer), vol. 3, article 45, 2025. Also accepted at ACM CODS-COMAD 2024.</p>
+                <p>A modified self-attention module that learns which past time steps matter for prediction, instead of relying on a manually fixed lag, to find causal links in multivariate time series.</p>
+                <p class="pub-links">
+                    <a href="https://link.springer.com/epdf/10.1007/s44248-025-00087-7?sharing_token=227NQz05sopfCeSiUHlqtPe4RwlQNchNByi7wbcMAY5WzVyBPUSbVtjz2XPQlIbz3V9bX9D6YOm1HMxRihOY1qAKOT84Co6THdctkJIldR-wMPKIc9VVNOv-5FMe-O_RfP6_f8VSoi_tB4la6UDXzpESQwKLWfljG7KE2q20ewY%3D" target="_blank" rel="noopener">Paper</a>
+                    <a href="https://arxiv.org/abs/2411.13264" target="_blank" rel="noopener">arXiv</a>
+                    <a href="https://github.com/riya-mahesh/SparseAttentionTransformersForGrangerCausality" target="_blank" rel="noopener">Code</a>
+                </p>
+            </article>
+
+            <article class="pub">
+                <h3>Efficient Model Propagation for Peer-to-Peer Federated Learning using Minimum Spanning Tree and Gossip Networks</h3>
+                <p class="authors">Alka Luqman, <strong>Riya Mahesh</strong>, Anupam Chattopadhyay</p>
+                <p class="venue">International Workshop on Secure and Efficient Federated Learning (FL-AsiaCCS), ACM ASIA CCS 2025.</p>
+                <p>Lowers the communication cost of peer-to-peer model training by propagating models along a minimum spanning tree over a sparse gossip network.</p>
+                <p class="pub-links">
+                    <a href="https://dl.acm.org/doi/abs/10.1145/3709023.3737694" target="_blank" rel="noopener">Paper</a>
+                    <a href="https://github.com/riya-mahesh/Peer-2-Peer_Federated_Learning" target="_blank" rel="noopener">Code</a>
+                </p>
+            </article>
+
+            <article class="pub">
+                <h3>Privacy and Security Implications of Cloud-Based AI Services: A Survey</h3>
+                <p class="authors">Alka Luqman, <strong>Riya Mahesh</strong>, Anupam Chattopadhyay</p>
+                <p class="venue">arXiv preprint, 2024.</p>
+                <p>Reviews the AI-as-a-Service landscape and presents a taxonomy of the risks facing model creators and consumers, along with known defenses.</p>
+                <p class="pub-links">
+                    <a href="https://arxiv.org/abs/2402.00896" target="_blank" rel="noopener">arXiv</a>
+                </p>
+            </article>
+
+            <article class="pub">
+                <h3>Region-Constrained Video Generation</h3>
+                <p class="authors"><strong>Riya Mahesh</strong> (first author)</p>
+                <p class="venue">U.S. patent application filed with Adobe.</p>
+            </article>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <article>
+                    <h3><a href="https://github.com/riya-mahesh/pico-llm" target="_blank" rel="noopener">Pico LLM: KV Cache Transformer</a></h3>
+                    <p>A multi-head attention transformer LLM with a KV cache manager for long-context generation.</p>
+                    <p class="meta">Deep Learning</p>
+                </article>
+                <article>
+                    <h3><a href="https://github.com/riya-mahesh/VirtualMemoryManagement" target="_blank" rel="noopener">Virtual Memory and Process Scheduler</a></h3>
+                    <p>A page-based virtual memory subsystem and preemptive multithreaded scheduler handling context switches, address translation and concurrent execution.</p>
+                    <p class="meta">Operating Systems</p>
+                </article>
+                <article>
+                    <h3><a href="https://github.com/riya-mahesh/Federated_Multi_Armed_Bandits" target="_blank" rel="noopener">Federated Multi-Armed Bandits</a></h3>
+                    <p>Simulated and benchmarked FedElim for best-arm identification, comparing communication cost and arm pulls against periodic communication. <a href="assets/MAB_Presentation.pdf" target="_blank" rel="noopener">Slides</a></p>
+                    <p class="meta">Bandits, Statistics</p>
+                </article>
+                <article>
+                    <h3><a href="https://github.com/riya-mahesh/Few-Shot-Learning" target="_blank" rel="noopener">Few-Shot Learning</a></h3>
+                    <p>Benchmarked Matching, Prototypical and Relation Networks, reaching 98.5% accuracy from one labeled example per class, with a Gradio interface for no-code inference.</p>
+                    <p class="meta">Computer Vision</p>
+                </article>
+                <article>
+                    <h3><a href="https://github.com/riya-mahesh/Defect-Preserving-Image-Restoration" target="_blank" rel="noopener">Anomaly-Preserving Image Restoration</a></h3>
+                    <p>Residual Channel Attention Network, denoising autoencoder and U-Net models that denoise images while preserving defects, with a best average PSNR of 30.4.</p>
+                    <p class="meta">Deep Learning, Computer Vision</p>
+                </article>
+                <article>
+                    <h3><a href="https://github.com/riya-mahesh/NLP_Course_Project" target="_blank" rel="noopener">Information Retrieval System</a></h3>
+                    <p>A custom search engine on the Cranfield dataset. LSA, Word2Vec, Doc2Vec and BM25 improved mAP, recall and n-DCG by 10%.</p>
+                    <p class="meta">NLP</p>
+                </article>
+                <article>
+                    <h3>Traffic Signal Optimization with RL</h3>
+                    <p>Soft Actor-Critic signal control on simulated traffic data, reducing queue length by 5%.</p>
+                    <p class="meta">Optimization and Control</p>
+                </article>
+                <article>
+                    <h3>Autonomous Rover, Team Anveshak</h3>
+                    <p>Path planning (A*, spiral search, RRT), ArUco 3D pose estimation, CAN communication between STM32s and PID control. Placed 14th in Asia-Pacific at the International Rover Challenge 2023.</p>
+                    <p class="meta">Robotics, Embedded Systems</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            <dl class="skills">
+                <dt>Languages</dt>
+                <dd>Python, C++, C, Java, SQL, Unix/Linux shell, Verilog</dd>
+                <dt>ML and AI</dt>
+                <dd>PyTorch, TensorFlow, Keras, Hugging Face Transformers, LLMs, generative AI, diffusion models, video generation, reinforcement learning, GRPO, LoRA, foundation model pre-training, multimodality, time-series modeling</dd>
+                <dt>ML systems</dt>
+                <dd>CUDA, GPU and parallel programming, distributed training, DDP, FlashAttention, mixed precision, model inference, KV caching, checkpointing, benchmarking, CI/CD</dd>
+                <dt>Tools</dt>
+                <dd>Git, AWS, Docker, Kubernetes, Slurm, Hadoop, NumPy, Pandas, Scikit-learn, OpenCV, ROS</dd>
+                <dt>Quantitative</dt>
+                <dd>Statistical modeling, probability, regression, causal inference, anomaly detection, randomized algorithms, linear optimization, multi-armed bandits, numerical methods</dd>
+            </dl>
+        </section>
+
+        <section id="background">
+            <h2 class="section-title">Education and Beyond</h2>
+
+            <article class="entry">
+                <p class="when">Sep 2025 – May 2027</p>
+                <div>
+                    <h3>New York University, Courant Institute</h3>
+                    <p class="meta">MS in Computer Science, AI Concentration · CGPA 3.945/4.0</p>
+                </div>
+            </article>
+            <article class="entry">
+                <p class="when">Nov 2021 – Jul 2025</p>
+                <div>
+                    <h3>Indian Institute of Technology Madras</h3>
+                    <p class="meta">BTech in Electrical Engineering, Minor in Computing · CGPA 3.95/4.0</p>
+                </div>
+            </article>
+            <article class="entry">
+                <p class="when">Teaching</p>
+                <div>
+                    <ul class="plain">
+                        <li>Graduate Teaching Assistant, Machine Learning (CSCI-GA.2565), NYU Courant, Spring 2026</li>
+                        <li>Teaching Assistant, Control Engineering (EE3004), IIT Madras, Fall 2024</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="entry">
+                <p class="when">Leadership</p>
+                <div>
+                    <ul class="plain">
+                        <li>Team Head, Electrical Engineering Research Club, IIT Madras: part of the 6-member core team leading 40+ members</li>
+                        <li>Manager, Entrepreneurship Cell, IIT Madras: brought in 6 PR deals with organizations including The Hindu, Inc42 and Dailyhunt</li>
+                        <li>IEEE Student Member and IEEE Women in Engineering Member</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="wrap">
+        <a href="mailto:riyamahesh20@gmail.com">riyamahesh20@gmail.com</a>
+    </footer>
 </body>
 </html>
