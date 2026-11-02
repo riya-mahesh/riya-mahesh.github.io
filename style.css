@@ -303,11 +303,8 @@ h3 a:hover {
     font-size: 0.95rem;
 }
 
-footer {
-    margin-top: 3rem;
-    padding-block: 2rem 3rem;
-    border-top: 1px solid var(--rule);
-    font-size: 0.9rem;
+main {
+    padding-bottom: 4rem;
 }
 
 /* Tablet */
